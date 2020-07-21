@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
+    <meta name="renderer" content="webkit">
+    <title>DEMO</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/page2.css">
+    <script src="node_modules/echarts/dist/echarts.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/echarts/map/js/china.js"></script>
+</head>
+<body>
+<div style="text-align:center;clear:both;">
+
+</div>
+<!--头部-->
+<div class="header">
+    新冠肺炎疫情下的多尺度舆情分析与动态可视化
+</div>
+<!--主体-->
+<div class="main clearfix">
+    <div class="main-left">
+        <div class="border-container">
+            <div id="nav">
+                <div class="page"><a href="page1.html"><img src="./img/多尺度蓝.png" alt=""></a></div>
+                <div class="page"><a href="./page2.html"><img src="./img/动态白.png" alt=""></a></div>
+                <div class="page"><a href="page3.html"><img src="./img/情感蓝.png" alt=""></a></div>
+            </div>
+        </div>
+    </div>
+    <div class="main-bottom">
+        <div class="border-container">
+            <div id="mapAjax"></div>
+            <span class="top-left border-span"></span>
+            <span class="top-right border-span"></span>
+            <span class="bottom-left border-span"></span>
+            <span class="bottom-right border-span"></span>
+        </div>
+        <div class="border-container">
+            <div id="line"></div>
+            <span class="top-left border-span"></span>
+            <span class="top-right border-span"></span>
+            <span class="bottom-left border-span"></span>
+            <span class="bottom-right border-span"></span>
+        </div>
+    </div>
+</div>
+<script src="line.js"></script>
+<script src="mapAjax.js"></script>
+</body>
+</html>

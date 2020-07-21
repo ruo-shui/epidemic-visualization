@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
+    <meta name="renderer" content="webkit">
+    <title>DEMO</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/page1.css">
+    <script src="node_modules/echarts/dist/echarts.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/echarts/map/js/china.js"></script>
+    <script src="node_modules/echarts/map/js/province/hubei.js"></script>
+</head>
+<body>
+<div style="text-align:center;clear:both;">
+
+</div>
+<!--头部-->
+<div class="header">
+    新冠肺炎疫情下的多尺度舆情分析与动态可视化
+</div>
+<!--主体-->
+<div class="main clearfix">
+    <div class="main-left">
+        <div class="border-container">
+            <div id="nav">
+                <div class="page"><a href="./page1.html"><img src="./img/多尺度白.png" alt=""></a></div>
+                <div class="page"><a href="page2.html"><img src="./img/动态蓝.png" alt=""></a></div>
+                <div class="page"><a href="page3.html"><img src="./img/情感蓝.png" alt=""></a></div>
+            </div>
+        </div>
+    </div>
+    <div class="main-middle">
+        <div class="border-container">
+            <div id="multiscaleMap"></div>
+            <span class="top-left border-span"></span>
+            <span class="top-right border-span"></span>
+            <span class="bottom-left border-span"></span>
+            <span class="bottom-right border-span"></span>
+        </div>
+        <div class="border-container">
+            <div id="quanguocipin"></div>
+            <span class="top-left border-span"></span>
+            <span class="top-right border-span"></span>
+            <span class="bottom-left border-span"></span>
+            <span class="bottom-right border-span"></span>
+        </div>
+    </div>
+    <div class="main-right">
+        <div class="border-container">
+            <div id="combineChart1"></div>
+            <span class="top-left border-span"></span>
+            <span class="top-right border-span"></span>
+            <span class="bottom-left border-span"></span>
+            <span class="bottom-right border-span"></span>
+        </div>
+        <div class="border-container">
+            <div class="name-title" id="name-title">
+                <strong> 全国舆情词云</strong>
+            </div>
+            <div id="cloud">
+                <img id="img" src="./全国.png" width="360" height="460" alt="">
+            </div>
+            <span class="top-left border-span"></span>
+            <span class="top-right border-span"></span>
+            <span class="bottom-left border-span"></span>
+            <span class="bottom-right border-span"></span>
+        </div>
+    </div>
+</div>
+<script src="combineChart1.js"></script>
+<script src="quanguocipin.js"></script>
+<script src="multiscaleMap.js"></script>
+</body>
+</html>
